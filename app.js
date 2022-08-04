@@ -20,7 +20,9 @@ const campgroundRoutes = require('./routes/campgrounds');
 const reviewRoutes = require('./routes/reviews');
 
 
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
+// const dbUrl = 'mongodb://localhost:27017/yelp-camp';
+let dbUrl = 'mongodb://our-first-user:2gVJHmqTeWiDy8TC@ac-8squill-shard-00-00.3er2y43.mongodb.net:27017,ac-8squill-shard-00-01.3er2y43.mongodb.net:27017,ac-8squill-shard-00-02.3er2y43.mongodb.net:27017/?ssl=true&replicaSet=atlas-30x16n-shard-0&authSource=admin&retryWrites=true&w=majority'
+
 mongoose.connect(dbUrl,{
     useNewUrlParser: true,
     // useCreateIndex: true,
