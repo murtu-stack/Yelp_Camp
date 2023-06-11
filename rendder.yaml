@@ -1,0 +1,9 @@
+name: MyNodeApp
+build:
+  steps:
+    - name: Install Dependencies
+      run: npm install
+deploy:
+  steps:
+    - name: Deploy to Rendder
+      run: npm run build
