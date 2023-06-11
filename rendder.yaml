@@ -1,9 +1,12 @@
 name: MyNodeApp
 build:
+  env:
+    - name: NODE_VERSION
+      value: 14.20.1
   steps:
     - name: Install Dependencies
-      run: npm install
+      run: yarn install
 deploy:
   steps:
     - name: Deploy to Rendder
-      run: npm run build
+      run: yarn build
